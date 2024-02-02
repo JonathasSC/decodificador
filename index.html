@@ -15,9 +15,31 @@
   </head>
   <body class="body">
     <main class="main">
-      <a href="#">
-        <img src="./assets/icons/alura.svg" />
-      </a>
+      <header class="header">
+        <a href="#">
+          <img src="./assets/icons/alura.svg" />
+        </a>
+        <nav class="header__nav">
+          <ul class="header__ul">
+            <li class="header__li">
+              <a
+                class="header__link"
+                target="_blank"
+                href="https://github.com/JonathasSC"
+                >Github</a
+              >
+            </li>
+            <li class="header__li">
+              <a
+                class="header__link"
+                target="_blank"
+                href="https://www.linkedin.com/in/jonathas-santos-c-15b476243/"
+                >LinkedIn</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </header>
       <section class="inputarea">
         <textarea
           id="textarea"
@@ -50,7 +72,12 @@
       </section>
 
       <div class="notfound" id="notResultOutput">
-        <img class="notfound__img" src="./assets/images/not_found.svg" />
+        <img
+          class="notfound__img"
+          alt="ilustração de personagem com lupa na mão procurando por algo, 
+          indicando ausencia de mensagem para ser criptografada ou descriptografada"
+          src="./assets/images/not_found.svg"
+        />
         <h1 class="notfound__title">Nenhuma mensagem encontrada</h1>
         <p class="notfound__text">
           Digite um texto que você deseja criptografar ou descriptografar.
