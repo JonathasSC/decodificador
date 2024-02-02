@@ -34,6 +34,7 @@ body {
 
 .header__link {
   padding: 1rem;
+  color: var(--color-blue-100);
   border-radius: 1rem;
   text-decoration: none;
   font-size: 12pt;
