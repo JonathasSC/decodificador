@@ -1,0 +1,163 @@
+@import url(base/base.css);
+
+body {
+  display: flex;
+  align-items: center;
+
+  background-color: var(--background-color);
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+  height: 100vh;
+
+  padding: 3rem;
+}
+
+.inputarea {
+  gap: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  padding: 4rem;
+  padding-left: 8rem;
+  padding-bottom: 1rem;
+  height: 100%;
+}
+
+.inputarea__textarea {
+  height: 100%;
+
+  padding: 1rem;
+
+  font-size: 14pt;
+  color: var(--color-blue-100);
+
+  background-color: var(--background-color);
+}
+
+.inputarea__textarea::placeholder {
+  color: var(--color-blue-100);
+}
+
+.inputarea__textarea:focus {
+  outline: none;
+}
+
+.submitarea {
+  gap: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.submitarea__label {
+  gap: 0.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.btnarea {
+  gap: 5%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.btnarea__btn {
+  width: 50%;
+  height: 5rem;
+
+  border-radius: 2rem;
+}
+
+.btnarea__btn.encrypt {
+  color: var(--background-color);
+  background-color: var(--color-blue-100);
+}
+
+.btnarea__btn.encrypt:hover {
+  background-color: var(--color-blue-200);
+}
+
+.btnarea__btn.decrypt {
+  color: var(--color-blue-100);
+  border: 1px solid var(--color-blue-100);
+  background-color: var(--color-gray-100);
+}
+
+.btnarea__btn.decrypt:hover {
+  background-color: var(--color-gray-200);
+}
+
+/* OUTPUT NOT FOUND*/
+.notfound.none {
+  display: none;
+}
+
+.output {
+  background-color: var(--background-output);
+
+  width: 52rem;
+  height: calc(100vh - 4rem);
+
+  margin: 2rem;
+  padding: 2rem;
+
+  border-radius: 2rem;
+}
+
+.output__span {
+  font-size: 12pt;
+}
+
+.notfound {
+  gap: 1rem;
+  height: 100%;
+  text-align: center;
+
+  display: flex;
+  align-content: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.notfound__title {
+  font-weight: bold;
+  font-size: 18pt;
+}
+.notfound__img {
+  width: 80%;
+}
+
+.notfound__text {
+  font-size: 12pt;
+}
+
+/* OUTPUT TEXT */
+.output__section.none {
+  display: none;
+}
+
+.output__section {
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.section__btn {
+  color: var(--color-blue-100);
+  border: 1px solid var(--color-blue-100);
+  background-color: var(--color-white-100);
+
+  height: 5rem;
+  border-radius: 2rem;
+}
+
+.section__btn:hover {
+  background-color: var(--color-white-200);
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="shortcut icon"
+      href="./assets/images/favicon.ico"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./styles/index.css" />
+    <link rel="stylesheet" href="./styles/media.css" />
+    <title>Decodificador</title>
+  </head>
+  <body class="body">
+    <main class="main">
+      <a href="#">
+        <img src="./assets/icons/alura.svg" />
+      </a>
+      <section class="inputarea">
+        <textarea
+          id="textarea"
+          class="inputarea__textarea"
+          placeholder="Digite seu texto"
+        ></textarea>
+        <section class="submitarea">
+          <label class="submitarea__label">
+            <img class="submitarea__icon" src="./assets/icons/atention.svg" />
+            Apenas letras minúsculas e sem acento.
+          </label>
+          <div class="btnarea">
+            <button onclick="encrypt()" class="btnarea__btn encrypt">
+              Criptografar
+            </button>
+            <button onclick="decrypt()" class="btnarea__btn decrypt">
+              Descriptografar
+            </button>
+          </div>
+        </section>
+      </section>
+    </main>
+
+    <aside class="output">
+      <section class="output__section none" id="resultOutput">
+        <span class="output__span" id="output"></span>
+        <button class="section__btn" id="copy__btn" onclick="copy()">
+          Copiar
+        </button>
+      </section>
+
+      <div class="notfound" id="notResultOutput">
+        <img class="notfound__img" src="./assets/images/not_found.svg" />
+        <h1 class="notfound__title">Nenhuma mensagem encontrada</h1>
+        <p class="notfound__text">
+          Digite um texto que você deseja criptografar ou descriptografar.
+        </p>
+      </div>
+    </aside>
+    <script src="./scripts/main.js"></script>
+  </body>
+</html>

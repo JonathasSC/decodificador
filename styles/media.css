@@ -1,0 +1,43 @@
+@media only screen and (max-width: 1024px) {
+  .body {
+    flex-direction: column;
+  }
+
+  .main {
+    height: 84vh;
+    padding-bottom: 0;
+  }
+
+  .inputarea__textarea {
+    height: 80%;
+  }
+
+  .inputarea {
+    padding: 4rem 0 0;
+  }
+
+  .inputarea__textarea {
+    padding: 0;
+  }
+
+  .output__section {
+    gap: 2rem;
+  }
+
+  .output {
+    width: 93%;
+    height: auto;
+  }
+
+  .notfound__img {
+    display: none;
+  }
+
+  .notfound__title {
+    font-size: 13pt;
+  }
+
+  .notfound__text {
+    font-size: 11pt;
+  }
+}
